@@ -37,6 +37,10 @@ public class LevelManager : MonoBehaviour
     {
         SceneManager.LoadScene(Scene.BoissyLoicSceneExterieur.ToString());
     }
+        public void Scene1()
+        {
+            SceneManager.LoadScene(Scene.ReyNicolasInterieur.ToString());
+        }
             public void LoadMainMenu()
     {
         SceneManager.LoadScene(Scene.MainMenu.ToString());
@@ -47,12 +51,12 @@ public class LevelManager : MonoBehaviour
         Application.Quit();
     }
 
-/*    public async void LoadAsyncScene(Scene scenename)
+    public async void LoadAsyncScene(Scene scenename)
     {
         var sceneLoad = SceneManager.LoadSceneAsync(scenename.ToString());
-        sceneLoad.allowSceneActivation = false;
+        sceneLoad.allowSceneActivation = true;
 
-        _loadCanvas.SetActive(true);
+       /* _loadCanvas.SetActive(true);
         do{
             await Task.Delay(100);
             _progressbar.fillAmount = Scene.load.progress;
@@ -61,9 +65,9 @@ public class LevelManager : MonoBehaviour
 
         sceneLoad.allowSceneActivation = true;
         
-        _loadCanvas.SetActive(true);
+        _loadCanvas.SetActive(true);*/
     }
-*/
+
     public enum Scene{
         MainMenu,
         ReyNicolasInterieur,
