@@ -45,6 +45,10 @@ public class LevelManager : MonoBehaviour
         {
             SceneManager.LoadScene(Scene.LangloisGuillaumeInterieur.ToString());
         }
+        public void Scene3()
+        {
+            SceneManager.LoadScene(Scene.SabrinaMScene.ToString());
+        }
             public void LoadMainMenu()
     {
         SceneManager.LoadScene(Scene.MainMenu.ToString());
@@ -77,5 +81,6 @@ public class LevelManager : MonoBehaviour
         ReyNicolasInterieur,
         BoissyLoicSceneExterieur,
         LangloisGuillaumeInterieur,
+        SabrinaMScene,
     }
 }
