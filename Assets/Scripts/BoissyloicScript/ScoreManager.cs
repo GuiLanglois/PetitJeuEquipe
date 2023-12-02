@@ -8,6 +8,7 @@ public class ScoreManager : MonoBehaviour
    public static ScoreManager instance;
 
     public Text scoreText;
+    public GameObject portail;
 
     int score = 0;
 
@@ -33,5 +34,10 @@ public class ScoreManager : MonoBehaviour
     public void AddPoint(){
         score += 1;
         scoreText.text = score.ToString();
+
+        if(score >= 5){
+            portail.SetActive(true);
+
+        }
     }
 }
