@@ -5,27 +5,20 @@ using UnityEngine;
 public class Respawn : MonoBehaviour
 {
 
-    
+
     [SerializeField] GameObject _player;
     [SerializeField] GameObject _respawnpoint;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    
 
- void OnCollisionEnter(Collision other)
-{
-            if(other.gameObject.tag == "death"){
-                Debug.Log($"AAAAAAAAAAAA");
-        _player.transform.position = _respawnpoint.transform.position;
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("death"))
+        {
+            Debug.Log("AAAAAAAAAAAA");
+            _player.GetComponent<CharacterController>().enabled = false;
+            _player.transform.position = _respawnpoint.transform.position;
+                        _player.GetComponent<CharacterController>().enabled = true;
         }
-}
+    }
 }
