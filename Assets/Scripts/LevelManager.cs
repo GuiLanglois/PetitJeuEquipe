@@ -41,6 +41,10 @@ public class LevelManager : MonoBehaviour
         {
             SceneManager.LoadScene(Scene.ReyNicolasInterieur.ToString());
         }
+         public void Scene2()
+        {
+            SceneManager.LoadScene(Scene.LangloisGuillaumeInterieur.ToString());
+        }
             public void LoadMainMenu()
     {
         SceneManager.LoadScene(Scene.MainMenu.ToString());
@@ -72,5 +76,6 @@ public class LevelManager : MonoBehaviour
         MainMenu,
         ReyNicolasInterieur,
         BoissyLoicSceneExterieur,
+        LangloisGuillaumeInterieur,
     }
 }
