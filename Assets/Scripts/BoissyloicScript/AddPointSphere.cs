@@ -10,6 +10,8 @@ public class AddPointSphere : MonoBehaviour
    {
       ScoreManager.instance.AddPoint();
       Destroy(sphere);
+
+   
       
    }
 }
