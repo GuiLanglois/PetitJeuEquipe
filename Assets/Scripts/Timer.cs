@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
 
-    public float timeLeft;
+    //public float timeLeft;
     public Text timertext;
 
     private LevelManager _levelManager;
@@ -14,6 +14,7 @@ public class Timer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         _levelManager = LevelManager.Instance;
     }
 
@@ -22,13 +23,13 @@ public class Timer : MonoBehaviour
     {
         
         
-        if(timeLeft >= 0)
+        if(TimingManager._timer >= 0)
         {
-            timeLeft -= Time.deltaTime;
-            updateTimer(timeLeft);
+            TimingManager._timer -= Time.deltaTime;
+            updateTimer(TimingManager._timer);
         }
 
-        if(timeLeft <= 0)
+        if(TimingManager._timer <= 0)
         {
             FinJeu();
         }

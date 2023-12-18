@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
@@ -10,7 +11,9 @@ public class ScoreManager : MonoBehaviour
     public Text scoreText;
     public GameObject portail;
 
-    int score = 0;
+    int score;
+
+    [SerializeField] private GameManager _gameManager;
 
      /// <summary>
     /// Awake is called when the script instance is being loaded.
@@ -22,20 +25,23 @@ public class ScoreManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         scoreText.text = score.ToString();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        score = _gameManager._score;
+        scoreText.text = score.ToString();
     }
 
     public void AddPoint(){
-        score += 1;
+        _gameManager._score += 1;
+        score = _gameManager._score;
         scoreText.text = score.ToString();
 
-        if(score >= 5){
+        if(_gameManager._score >= 5){
             portail.SetActive(true);
 
         }
