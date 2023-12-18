@@ -14037,6 +14037,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 398590120123246633, guid: 855cb08077f2ad147b9a854e3098e86f,
+        type: 3}
+      propertyPath: m_PositionInput.m_Action.m_Id
+      value: a22d564f-e4ed-4d61-9e25-2fa925746702
+      objectReference: {fileID: 0}
+    - target: {fileID: 398590120123246633, guid: 855cb08077f2ad147b9a854e3098e86f,
+        type: 3}
+      propertyPath: m_RotationInput.m_Action.m_Id
+      value: 4deceb0c-3016-42c2-b98a-bb1d43ca6fb9
+      objectReference: {fileID: 0}
+    - target: {fileID: 398590120123246633, guid: 855cb08077f2ad147b9a854e3098e86f,
+        type: 3}
+      propertyPath: m_PositionInput.m_Action.m_Name
+      value: Position Input
+      objectReference: {fileID: 0}
+    - target: {fileID: 398590120123246633, guid: 855cb08077f2ad147b9a854e3098e86f,
+        type: 3}
+      propertyPath: m_RotationInput.m_Action.m_Name
+      value: Rotation Input
+      objectReference: {fileID: 0}
     - target: {fileID: 2595638605277777616, guid: 855cb08077f2ad147b9a854e3098e86f,
         type: 3}
       propertyPath: m_Name

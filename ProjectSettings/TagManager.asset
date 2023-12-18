@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - death
+  - chaudron
+  - potion
   layers:
   - Default
   - TransparentFX
