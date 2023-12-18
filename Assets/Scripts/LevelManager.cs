@@ -82,5 +82,7 @@ public class LevelManager : MonoBehaviour
         BoissyLoicSceneExterieur,
         LangloisGuillaumeInterieur,
         SabrinaMScene,
+        
+        SceneFin,
     }
 }

@@ -12,6 +12,8 @@ public class UIMainMenu : MonoBehaviour
 
         private LevelManager _levelManager;
     
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +29,8 @@ public class UIMainMenu : MonoBehaviour
     {
         _levelManager.QuitGame();
     }
+    
+
 
     // Update is called once per frame
     void Update()
