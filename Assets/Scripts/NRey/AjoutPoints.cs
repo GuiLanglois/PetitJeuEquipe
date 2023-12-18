@@ -21,11 +21,13 @@ public class AjoutPoints : MonoBehaviour
     void Update()
     {
         points = _gameManager._score;
+        _scoretext.text = points.ToString();
     }
 
     public void CompleteLevel()
     {
-        points += 10;
+        _gameManager._score += 10;
+        points = _gameManager._score;
         _scoretext.text = points.ToString();
     }
 }
