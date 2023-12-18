@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ce8cb2e0320e14bb7f57f88f22ee21, type: 3}
   m_Name: GameManager
   m_EditorClassIdentifier: 
-  _score: 10
+  _score: 0

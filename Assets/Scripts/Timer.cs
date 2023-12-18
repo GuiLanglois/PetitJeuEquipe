@@ -28,7 +28,7 @@ public class Timer : MonoBehaviour
             updateTimer(timeLeft);
         }
 
-        if(timeLeft == 0)
+        if(timeLeft <= 0)
         {
             FinJeu();
         }

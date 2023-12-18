@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SabrinaMScene.unity
     guid: 3b245caea8df5f145a2fc0d35f169038
+  - enabled: 1
+    path: Assets/Scenes/SceneFin.unity
+    guid: e4d9f86f536f2784094c1dbd2c62445c
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 1caefe7be81ced449b033ab6db42367a,
       type: 2}

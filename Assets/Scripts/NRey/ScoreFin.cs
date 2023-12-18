@@ -14,12 +14,13 @@ public class ScoreFin : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _points = _gameManager._score;
         _scoretext.text = _points.ToString();
     }
 
     // Update is called once per frame
     void Update()
     {
-        _points = _gameManager._score;
+        
     }
 }
