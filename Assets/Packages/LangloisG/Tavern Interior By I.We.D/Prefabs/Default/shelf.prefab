@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 5508236319373191584}
   - component: {fileID: 5631162872222566141}
   - component: {fileID: 6137244714209934473}
+  - component: {fileID: 1466387519566257681}
+  - component: {fileID: 8002932248159625666}
   m_Layer: 0
   m_Name: shelf
   m_TagString: Untagged
@@ -32,7 +34,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5508236319373191584
 MeshFilter:
@@ -103,5 +105,47 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.4885298, y: 1.2706275, z: 1.5057015}
-  m_Center: {x: 0.03621348, y: 0.00028511882, z: 0.04013157}
+  m_Size: {x: 0.4885298, y: 0.08852464, z: 1.5057015}
+  m_Center: {x: 0.036213487, y: 0.5756396, z: 0.04013157}
+--- !u!65 &1466387519566257681
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4890316836633653279}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.4885298, y: 0.10444987, z: 1.5057015}
+  m_Center: {x: 0.036213487, y: -0.018011987, z: 0.04013157}
+--- !u!65 &8002932248159625666
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4890316836633653279}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.4885298, y: 0.1201573, z: 1.5057015}
+  m_Center: {x: 0.036213487, y: -0.57495, z: 0.04013157}
