@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ScoreManager : MonoBehaviour
 {
@@ -43,6 +44,12 @@ public class ScoreManager : MonoBehaviour
 
         if(_gameManager._score >= 5){
             portail.SetActive(true);
+
+        }
+
+        if(_gameManager._score >= 50)
+        {
+             SceneManager.LoadScene("SceneFin");
 
         }
     }
