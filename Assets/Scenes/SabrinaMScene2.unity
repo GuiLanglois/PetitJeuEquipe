@@ -5675,7 +5675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dac7effd541f314ca88f3e19efbee9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLeft: 310
+  timeLeft: 410
   timertext: {fileID: 132067294}
 --- !u!114 &132067294
 MonoBehaviour:
@@ -30702,7 +30702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69756e98650b94043bc7269fd6a6cb60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Potion: {fileID: 1661925501}
+  Potion: {fileID: 0}
 --- !u!65 &1203825555
 BoxCollider:
   m_ObjectHideFlags: 0
