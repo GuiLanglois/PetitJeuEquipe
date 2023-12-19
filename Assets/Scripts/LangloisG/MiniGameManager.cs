@@ -15,6 +15,12 @@ public class MiniGameManager : MonoBehaviour
     [SerializeField]
     private TMP_Text miniGameScoreText;
 
+    [SerializeField]
+    private AudioSource doorAudioSource;
+
+    [SerializeField]
+    private AudioClip doorAudioClip;
+
     private int miniGameScore;
 
     private bool firstLock = false;
@@ -86,12 +92,10 @@ public class MiniGameManager : MonoBehaviour
 
     private void LockCheck()
     {
-        Debug.Log("Fonction appelée");
-        
         if (firstLock == true && secondLock == true && thirdLock == true)
         {
-            Debug.Log("Entré dans le if");
             door.SetBool("IsOpened", true);
+            doorAudioSource.PlayOneShot(doorAudioClip);
             sceneChangerTrigger.SetActive(true);
         }
     }
