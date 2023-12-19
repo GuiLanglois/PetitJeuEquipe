@@ -18,6 +18,6 @@ public class Level03 : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other){
-        _levelManager.LoadAsyncScene(LevelManager.Scene.SabrinaMScene);
+        _levelManager.LoadAsyncScene(LevelManager.Scene.SabrinaMScene2);
     }
 }
